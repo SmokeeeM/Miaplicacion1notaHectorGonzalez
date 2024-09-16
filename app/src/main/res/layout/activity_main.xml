@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:ignore="ExtraText">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/orangutan1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="301dp"
+        android:layout_height="107dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#6200EE"
+        android:elevation="4dp"
+        android:onClick="siguienteVista"
+        android:text="Haz click aquí para obtener más información"
+        android:textColor="@android:color/black"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="268dp"
+        android:layout_height="257dp"
+        android:background="#AAFFFFFF"
+        android:padding="16dp"
+        android:text="Los orangutanes, conocidos por su distintivo pelaje rojo, son los mamíferos arbóreos más grandes que existen; pasan la mayor parte de su tiempo en los árboles. Poseen largos y poderosos brazos y manos así como pies prensiles que les permiten moverse a través de las ramas. Haz click debajo para obtener más información de los orangutanes."
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="242dp" />
+
+    <TextView
+        android:id="@+id/detailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#80000000"
+        android:text="Enciclopedia de Orangutanes"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="163dp" /> <!-- Fondo negro semitransparente -->
+    app:layout_constraintBottom_toTopOf="@+id/textView5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.motion.widget.MotionLayout>
